@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.4" icons="true">  
+  <object id="1" language="java" name="com.example.project1.MainActivity" project="StockQuotes" 
+    file="/StockQuotes/src/com/example/project1/MainActivity.java" binary="false" label="mainActivity" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="454" y="0"/>    
+    <execution id="2">      
+      <position height="84" width="99" x="5" y="78"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="21" width="99" x="5" y="120"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="84" width="99" x="5" y="162"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="21" width="99" x="5" y="204"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="63" width="99" x="5" y="248"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="21" width="99" x="5" y="609"/>    
+    </execution>  
+  </object>  
+  <object id="12" language="java" name="com.example.project1.HTTPRequestSender" project="StockQuotes" 
+    file="/StockQuotes/src/com/example/project1/HTTPRequestSender.java" binary="false" label="httpRequestSender" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="379" y="0"/>    
+    <execution id="10">      
+      <position height="21" width="141" x="108" y="269"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="84" width="141" x="108" y="302"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="141" x="108" y="344"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="84" width="141" x="108" y="363"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="21" width="141" x="108" y="405"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="63" width="141" x="108" y="433"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="64" width="141" x="108" y="587"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="com.example.project1.DataParse" project="StockQuotes" 
+    file="/StockQuotes/src/com/example/project1/DataParse.java" binary="false" label="dataParse" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="548" y="0"/>    
+    <execution id="21">      
+      <position height="21" width="99" x="253" y="454"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="63" width="99" x="253" y="465"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="21" width="99" x="253" y="542"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="106" width="99" x="253" y="566"/>    
+    </execution>  
+  </object>  
+  <object id="31" language="java" name="com.example.project1.Data" project="StockQuotes" 
+    file="/StockQuotes/src/com/example/project1/Data.java" binary="false" label="data" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="1028" y="0"/>    
+    <execution id="27">      
+      <position height="21" width="99" x="356" y="486"/>    
+    </execution>    
+    <execution id="32">      
+      <position height="63" width="99" x="356" y="521"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="onCreate(android.os.Bundle):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="wait():void">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="doInBackground(java.lang.String[]):java.lang.String">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="14" operation="getResource(java.lang.String):java.lang.String">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="17" operation="onPostExecute(java.lang.String):void">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="20" operation="doInBackground(java.lang.String[]):com.example.project1.Data">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="23" operation="dataReceivedFromNetwork(java.lang.String):void">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="26" operation="Data(java.lang.String,android.graphics.Bitmap)">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="30" operation="onPostExecute(java.lang.String):void">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="33" operation="onPostExecute(com.example.project1.Data):void">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>
+</sequence-diagram>
